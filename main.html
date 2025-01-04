@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hintera - Головна</title>
+    <!-- Bootstrap CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <style>
+
+.body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; 
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 10px;
+    text-align: left;
+}
+.hero {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services {
+    padding: 30px 20px;
+}
+
+.contact {
+    background-color: #f1f1f1; 
+    padding: 30px 20px;
+    min-height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#map {
+    height: 400px; 
+    width: 100%;
+}
+
+#map iframe {
+    height: 100%; 
+    width: 100%; 
+    border: 0; 
+}
+
+.about {
+    padding: 60px 20px; 
+    text-align: center; 
+}
+
+.image-container {
+    background-image: url('equip.png');
+    background-repeat: repeat-x; 
+    background-size: contain; 
+    background-position: top left; 
+    height: 300px; 
+    width: 100%;
+    padding: 20px 10px;
+    background-position: 0 0, 200px 0;
+}
+
+.container text-center{
+    padding-top: 30px;
+}
+
+.company-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; 
+    padding: 20px 0;
+}
+
+.service-image {
+    width: 100px; 
+    height: auto; 
+    margin-bottom: 10px;
+}
+
+#services{
+    background-color: #f8f9fa;
+    padding: 40px 0; 
+}
+
+#navbar {
+    background-color: lightgray; /* Фон */
+    padding: 10px 15px;
+}
+
+.nav-link {
+    color: black;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.about-image-container {
+    background-image: url('equip.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: top left;
+    height: 300px;
+    width: 100%;
+}
+
+.service-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.service-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+#service-heating_image-container{
+    width: 400px;
+    height: auto;
+}
+
+#lang-switcher {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+</style>
+
+</head>
+<body>
+  
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hintera</a>
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#about" data-lang="navbar_aboutUs">Про нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services" data-lang="navbar_services">Послуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" data-lang="navbar_contacts">Контакти</a>
+                </li>
+            </ul> 
+            <!-- Language Switcher -->  
+            <button id="lang-switcher" data-lang="uk">UK</button>           
+        </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-4" data-lang="greating">Ласкаво просимо до Hintera!</h1>
+            <p class="lead" data-lang="short_description">Ми надаємо якісні сантехнічні послуги з 2022 року.</p>
+        </div>
+    </section>
+
+
+     <!-- About Section -->
+    <section class="about">
+        <div class="about-image-container">
+        </div>    
+        <div class="container text-center">    
+            <h2 class="mt-4" data-lang="about-link">Про компанію Hintera</h2>
+            <p class="company-description" data-lang="description-link">
+                Незважаючи на невеликий вік компанії, Hintera - це команда професіоналів у сфері сантехніки, вентиляції та опалення. Ми забезпечуємо високоякісні послуги для клієнтів з 2022 року, пропонуючи індивідуальні рішення та відповідальний підхід до роботи. В перелік виконуваних робіт входить монтаж/демонтаж, пов'язаний з сантехнікою, вентиляцією та опаленням.
+            </p>
+        </div>
+    </section>
+</body>
+
+    <!-- Services Section -->
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="text-center mb-4" data-lang="services-link">Наші послуги</h2>
+        <div class="row">
+            <!-- Сантехніка -->
+            <div class="col-md-4 text-center">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="service-image-container">
+                            <img src="plumb.jpg" alt="Сантехніка" class="service-image">
+                        </div>
+                        <h5 class="card-title mt-3" data-lang="plumbing">Сантехніка</h5>
+                        <p class="card-text" data-lang="plumbing_description">Надаємо послуги з встановлення, ремонту та обслуговування сантехніки: ванни, умивальники, душові кабіни, бойлери, змішувачі тощо. Швидко ліквідуємо аварії, як-от протікання труб чи засмічення. Гарантуємо якість і довговічність обладнання.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Опалення -->
+            <div class="col-md-4 text-center">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="service-image-container" id="service-heating_image-container">
+                            <img src="heating.png" alt="Опалення" class="service-image">
+                        </div>
+                        <h5 class="card-title mt-3" data-lang="heating">Опалення</h5>
+                        <p class="card-text" data-lang="heating_description">Проектуємо, встановлюємо й обслуговуємо системи опалення: котли, радіатори, теплі підлоги. Підбираємо ефективне обладнання, дотримуємося норм, забезпечуємо комфорт і безперебійну роботу в будь-яку погоду.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Вентиляція -->
+            <div class="col-md-4 text-center">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="service-image-container">
+                            <img src="vent.jpg" alt="Вентиляція" class="service-image">
+                        </div>
+                        <h5 class="card-title mt-3" data-lang="ventilation">Вентиляція</h5>
+                        <p class="card-text" data-lang="ventilation_description">Проектуємо й монтуємо системи вентиляції, кондиціонери та припливно-витяжні системи. Забезпечуємо свіжість повітря, враховуючи особливості приміщення. Проводимо чистку й обслуговування для довговічності систем.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-4" data-lang="contact-link">Контакти</h2>
+            <div class="row">
+                <!-- Contact Details -->
+                <div class="col-md-6">
+                    <h5 data-lang="details">Реквізити компанії:</h5>
+                    <p><strong data-lang="name">Назва:</strong> <span>Hintera</span></p>
+                    <p><strong data-lang="adress">Адреса:</strong> <span data-lang="adress_name">м. Київ, вул. Прикладна, 15</span></p>
+                    <p><strong data-lang="number">Телефон:</strong> +38 (067) 123-45-67</p>
+                    <p><strong >Email:</strong> info@hintera.ua</p>
+                    <p><strong data-lang="work_hours">Робочі години:</strong>  <span data-lang="hours"> Пн-Пт, 09:00 - 18:00 </span></p>
+                </div>
+                
+                <!-- Map -->
+                <div class="col-md-6">
+                    <h5 data-lang="we_locate">Ми знаходимося тут:</h5>
+                    <div id="map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.4018881447194!2d21.16193835706315!3d55.69239919323734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e4dc6ca9ff82db%3A0xee94e82487ab4446!2sDubysos%20g.%2027%2C%20Klaip%C4%97da%2C%2091181%20Klaip%C4%97dos%20m.%20sav.!5e0!3m2!1sru!2slt!4v1735162835415!5m2!1sru!2slt" 
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>   
+        <!-- Footer -->
+        <footer>
+            <p data-lang="copyright">&copy; 2024 Hintera. Всі права захищені.</p>
+        </footer>
+    <script src="translate.js"></script> 
+</body>
+</html>
