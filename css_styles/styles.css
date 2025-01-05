@@ -49,7 +49,7 @@ footer {
 }
 
 .about-image-container {
-    background-image: url('images/equip.png');
+    background-image: url('../images/equip.png');
     background-repeat: repeat-x; 
     background-size: contain; 
     background-position: top left; 
