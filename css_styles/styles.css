@@ -48,7 +48,7 @@ footer {
     text-align: center; 
 }
 
-.image-container {
+.about-image-container {
     background-image: url('images/equip.png');
     background-repeat: repeat-x; 
     background-size: contain; 
@@ -95,15 +95,6 @@ footer {
 .nav-link:hover {
     color: white;
     text-decoration: underline;
-}
-
-.about-image-container {
-    background-image: url('images/equip.png');
-    background-repeat: repeat-x;
-    background-size: contain;
-    background-position: top left;
-    height: 300px;
-    width: 100%;
 }
 
 .service-image-container {

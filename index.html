@@ -18,23 +18,27 @@
 <body>
   
     <!-- Navbar -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">Hintera</a>
-            <ul class="navbar-nav d-flex flex-row">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#about" data-lang="navbar_aboutUs">Про нас</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services" data-lang="navbar_services">Послуги</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact" data-lang="navbar_contacts">Контакти</a>
-                </li>
-            </ul> 
-            <!-- Language Switcher -->  
-            <button id="lang-switcher" data-lang="uk">UK</button>           
-        </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about" data-lang="navbar_aboutUs">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" data-lang="navbar_services">Послуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-lang="navbar_contacts">Контакти</a>
+                    </li>
+                </ul>
+                <!-- Language Switcher -->
+                <button id="lang-switcher" class="btn btn-primary ms-3" data-lang="uk">UK</button>
+            </div>
         </div>
     </nav>
 
@@ -118,7 +122,7 @@
                     <p><strong data-lang="name">Назва:</strong> <span>Hintera</span></p>
                     <p><strong data-lang="adress">Адреса:</strong> <span data-lang="adress_name">м. Клайпеда, вул. Дуібсос, н. 27</span></p>
                     <p><strong data-lang="number">Телефон:</strong> +38 (067) 123-45-67</p>
-                    <p><strong >Email:</strong> info@hintera.ua</p>
+                    <p><strong >Email:</strong> info@hintera.lt</p>
                     <p><strong data-lang="work_hours">Робочі години:</strong>  <span data-lang="hours"> Пн-Пт, 09:00 - 18:00 </span></p>
                 </div>
                 
