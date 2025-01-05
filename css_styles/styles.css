@@ -49,7 +49,7 @@ footer {
 }
 
 .image-container {
-    background-image: url('equip.png');
+    background-image: url('/workspaces/praktyka/images/equip.png');
     background-repeat: repeat-x; 
     background-size: contain; 
     background-position: top left; 
@@ -98,7 +98,7 @@ footer {
 }
 
 .about-image-container {
-    background-image: url('equip.png');
+    background-image: url('/workspaces/praktyka/images/equip.png');
     background-repeat: repeat-x;
     background-size: contain;
     background-position: top left;
